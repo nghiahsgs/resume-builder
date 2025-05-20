@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { FlexboxSpacer } from "components/FlexboxSpacer";
 import { AutoTypingResume } from "home/AutoTypingResume";
+import { Link } from "../../i18n/navigation";
 
 export const Hero = () => {
   return (

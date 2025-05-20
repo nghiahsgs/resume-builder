@@ -7,10 +7,11 @@ import { groupLinesIntoSections } from "lib/parse-resume-from-pdf/group-lines-in
 import { extractResumeFromSections } from "lib/parse-resume-from-pdf/extract-resume-from-sections";
 import { ResumeDropzone } from "components/ResumeDropzone";
 import { cx } from "lib/cx";
-import { Heading, Link, Paragraph } from "components/documentation";
+import { Heading, Paragraph } from "components/documentation";
 import { FlexboxSpacer } from "components/FlexboxSpacer";
 import { ResumeTable } from "./ResumeTable";
 import { ResumeParserAlgorithmArticle } from "./ResumeParserAlgorithmArticle";
+import { Link } from "../../../i18n/navigation";
 
 const RESUME_EXAMPLES = [
   {
