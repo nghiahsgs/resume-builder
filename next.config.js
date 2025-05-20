@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   // Nextjs has an issue with pdfjs-dist which optionally uses the canvas package
   // for Node.js compatibility. This causes a "Module parse failed" error when
@@ -26,4 +29,4 @@ const nextConfig = {
   }
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);
